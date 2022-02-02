@@ -10,8 +10,9 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 
 // @title  
-// 1. A new smart contract to create ERC20 tokens
-// 2. A distribution plan structure to associate ERC1155 token-ID to ERC20 token amount
+// 1. A new smart contract to create ERC20 tokens. This contract distributes ERC20 tokens
+// to eligible ERC1155 token owners.
+// 2. @owner creates the distribution plan to associate the ERC20 token amount with the ERC1155 token-ID and ERC1155 contract address
 // 2.1 Introducing a Struct {
 //    ERC1155 token ID
 //    Contract address
