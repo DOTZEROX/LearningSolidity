@@ -28,12 +28,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     
 
-    uint256 public constant minimumMintInterval = 365 days;
-    uint256 public constant mintCap = 200; // 2%
-
- 
-    uint256 public nextMint; // Timestamp
-    uint256 public claimPeriodEnds; // Timestamp
+   
    
 
     
@@ -42,7 +37,7 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     /**
      * @dev Constructor.
      * @param freeSupply The number of tokens to issue to the contract deployer.
-     * @param airdropSupply The number of tokens to reserve for the airdrop.
+     * @param airdropSupply The number of tokens to reserve in this contract for distribution
      * @param _claimPeriodEnds The timestamp at which tokens are no longer claimable.
      */
     constructor(
