@@ -17,7 +17,7 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     // Declare state variables of the contract
     // 2. @owner creates the distribution plan to associate the ERC20 token amount with the ERC1155 token-ID and ERC1155 contract address
     
-    Struct Avatar{
+    Struct Avatar {
     ERC1155 token ID;
     Contract address;
     } 
@@ -60,6 +60,6 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
         claimPeriodEnds = _claimPeriodEnds;
         nextMint = block.timestamp + minimumMintInterval;
     }
-
+}
 
 // https://ethereum.stackexchange.com/questions/2385/can-i-save-structs-in-a-mapping/2386
