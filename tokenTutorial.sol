@@ -12,12 +12,19 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 // @title  
 // 1. A new smart contract to create ERC20 tokens. This contract distributes ERC20 tokens
 // to eligible ERC1155 token owners.
-// 2. @owner creates the distribution plan to associate the ERC20 token amount with the ERC1155 token-ID and ERC1155 contract address
-// 2.1 Introducing a Struct {
-//    ERC1155 token ID
-//    Contract address
-// } 
+
+contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
+    // Declare state variables of the contract
+    // 2. @owner creates the distribution plan to associate the ERC20 token amount with the ERC1155 token-ID and ERC1155 contract address
+    
+    Struct {
+    ERC1155 token ID
+    Contract address
+    } 
+
 // 2.2 mapping (Struct []=> amount) 
+
+    mapping (
 // 3. A storage structure to store information about claimed tokens
 //  mapping ((Struct []=> amount) => bool) // all values by default set to false
 // 
@@ -25,7 +32,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 // 4.1 When tokens claimed => update mapping
 // 
 
-contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
+
     
 
    
