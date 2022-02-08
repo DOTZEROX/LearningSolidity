@@ -20,7 +20,7 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     //Contract address;
     
     struct Avatar {
-    uint246 tokeId;
+    uint256 tokeId;
     address wrapper;
     } 
 
