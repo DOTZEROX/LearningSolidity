@@ -40,8 +40,16 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     address wrapper;
     } 
 
-    // Create Distribution Plan 
-    uint256 [] public amounts;
+   // Create Distribution Plan 
+    //@owner creates Distribution Tiers associated with token ID reange
+    //example: tokenId>0 & tokenId<100000 
+    //         _amount = 2000
+    //
+    //          200000>tokenId>100000 
+    //         _amount = 1000
+    //
+    uint256 [] public amounts; // Values[10000, 5000, 2500, 1250, 625]
+    uint256 [] public range;   // [10000, 20000, 30000, 40000, 100000]
     
 // 2.2 mapping (Struct []=> amount) 
 
