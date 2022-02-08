@@ -12,7 +12,23 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 // @title  
 // 1. A new smart contract to create ERC20 tokens. This contract distributes ERC20 tokens
 // to eligible ERC1155 token owners.
+// The Avatar will look like this:
+//{
+//    tokeId: 'ID number01',
 
+//    tokeId: 'ID number02',
+//    Contract address: "0x1234...1234,
+//    Amount : [amount 02]
+//}//    Contract address: "0x1234...1234,
+//    Amount : [amount of tokens]
+//}
+
+// A mapping (address -> Avatar) public avatars;
+//{
+//    tokeId: 'ID number01',
+//    Contract address: "0x1234...1234,
+//    Amount : [amount 01]
+//
 contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     // Declare state variables of the contract
     // Create the avatar structure to assign the tokens
