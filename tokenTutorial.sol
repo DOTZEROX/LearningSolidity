@@ -16,9 +16,12 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     // Declare state variables of the contract
     // Create the avatar structure to assign the tokens
+    //ERC1155 token ID;
+    //Contract address;
+    
     struct Avatar {
-    ERC1155 token ID;
-    Contract address;
+    uint246 tokeId;
+    address wrapper;
     } 
 
     // Create Distribution Plan 
