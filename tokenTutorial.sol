@@ -15,11 +15,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 // The Avatar will look like this:
 //{
 //    tokeId: 'ID number01',
-
-//    tokeId: 'ID number02',
 //    Contract address: "0x1234...1234,
-//    Amount : [amount 02]
-//}//    Contract address: "0x1234...1234,
 //    Amount : [amount of tokens]
 //}
 
@@ -29,6 +25,10 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 //    Contract address: "0x1234...1234,
 //    Amount : [amount 01]
 //
+//    tokeId: 'ID number02',
+//    Contract address: "0x1234...1234,
+//    Amount : [amount 02]
+//}
 contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     // Declare state variables of the contract
     // Create the avatar structure to assign the tokens
