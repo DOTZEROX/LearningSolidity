@@ -51,9 +51,8 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
     uint256 [] public amounts; // Values[10000, 5000, 2500, 1250, 625]
     uint256 [] public range;   // [10000, 20000, 30000, 40000, 100000]
     
-// 2.2 mapping (Struct []=> amount) 
 
-    mapping ( Avatar => uint256) AvatarAmount;
+    
 // 3. A storage structure to store information about claimed tokens
 //  mapping ((Struct []=> amount) => bool) // all values by default set to false
 // 
