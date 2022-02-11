@@ -57,18 +57,7 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
 // 3. A storage structure to store information about claimed tokens
 //  mapping ((Struct []=> amount) => bool) // all values by default set to false
 // 
-// 4. A distribution function to allow eligible owners to claim their tokens
-// 4.1 When tokens claimed => update mapping
-// 
 
-
-    
-
-   
-   
-
-    
-  
 
     /**
      * @dev Constructor.
@@ -90,5 +79,10 @@ contract FRNSToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
         nextMint = block.timestamp + minimumMintInterval;
     }
 }
+
+// 4. Claim function
+// A distribution function to allow eligible owners to claim their tokens
+// 4.1 A mapping to store boolean values when tokens are claimed // when claimed => update mapping
+// 
 
 // https://ethereum.stackexchange.com/questions/2385/can-i-save-structs-in-a-mapping/2386
